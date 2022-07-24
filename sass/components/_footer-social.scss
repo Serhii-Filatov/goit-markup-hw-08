@@ -1,0 +1,22 @@
+.footer-social {
+    margin-left: 70px;
+
+        &__title {
+            color: var(--color-main);
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        
+            margin-bottom: 20px;
+        }
+      
+        &__list {
+            display: flex; 
+        }
+        &__item:not(:last-child) {
+            margin-right: 10px;
+       }
+}
+  

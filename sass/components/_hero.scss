@@ -1,0 +1,12 @@
+.hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  
+    background-color: var(--hero-footer-bcg);
+        
+        &__title {
+            margin-bottom: 30px;
+        }
+}
+  

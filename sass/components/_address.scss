@@ -1,0 +1,18 @@
+.address{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+
+        &__list {
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        &__item {
+            margin-bottom: 9px;
+        }
+        
+        &__txt {
+            color: var(--color-main);
+        }
+}
+  

@@ -1,0 +1,45 @@
+.subscribe{
+    margin-left: auto;
+
+        &__title {
+            display: block;
+            margin-bottom: 20px;    
+            
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color:var(--color-main);
+        }
+      
+        &__input {
+            width: 358px;
+            height: 50px;
+            margin-right: 12px;
+            padding: 15px 16px;
+        
+            background-color: transparent;
+            outline: transparent;
+        
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+      
+        &__input::placeholder {  
+            font-size: 16px;
+            line-height: 1.25;   
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+      
+        &__input:hover,
+        &__input:focus {    
+            color: var(--color-main);
+            border-color: var(--brand-color);
+        }
+  }
+  
