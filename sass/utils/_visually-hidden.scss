@@ -10,3 +10,9 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+  .hidden{
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
+  }

@@ -1,30 +1,40 @@
 .fetchers {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    gap: 30px;
 
-        &__item::before {
-            display: flex;
-            content: "";
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 30px;
-            background: var(--bcg-color);
-            border-radius: 4px;
-        }
-        
-        &__item:not(:last-child) {
-            margin-right: 30px;
-        }
-        
         &__icons{
-            width: 270px;
-            height: 120px;
+            
             background-color: var(--bcg-color);
             border-radius: 4px;
             margin-bottom: 30px;
+
+            @media screen and (max-width: $mobile){
+                max-width: 450px;
+                max-height: 120px;
+            } 
+            @media screen and (min-width: $mobile){
+                width: 450px;
+                height: 120px;
+            }
+
+            @media screen and (min-width: $tablet){
+                width: 354px;
+                height: 120px;
+            }
+            
+            @media screen and (min-width: $desktop){
+                width: 270px;
+                height: 120px;
+            }
         }
         
+        
         &__title {
-            text-align: left;
+            
             margin-bottom: 10px;
         
             color: var(--color-txt-basic);
@@ -32,6 +42,14 @@
             font-weight: 700;
             line-height: 1.1;
             text-transform: uppercase;
+             
+            @media screen and (min-width: $mobile){
+                text-align:center;
+            }
+
+            @media screen and (min-width: $tablet){
+                text-align: left;
+            }
         }
         
         &__text {
@@ -39,6 +57,21 @@
             width: 270px;
             font-size: 14px;
             line-height: 1.7;
+
+            @media screen and (min-width: $mobile){
+                width: 450px;
+                text-align:center;
+            }
+
+            @media screen and (min-width: $tablet){
+                width: 354px;
+                text-align: left;
+            }
+            
+            @media screen and (min-width: $desktop){
+                width: 270px;
+                text-align: left;
+            }
         }
 }
   
