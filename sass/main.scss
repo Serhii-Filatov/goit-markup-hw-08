@@ -1,6 +1,7 @@
 // Utils styles
 @import"./utils/vars";
 @import"./utils/visually-hidden";
+@import"./utils/breakpoints";
 
 // Base styles
 @import"./base/common";
@@ -22,6 +23,7 @@
 @import"./components/logo";
 @import"./components/main-title";
 @import"./components/modal";
+@import"./components/menu";
 @import"./components/navigation";
 @import"./components/overlay";
 @import"./components/portfolio-overlay";

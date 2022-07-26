@@ -1,6 +1,22 @@
 .container {
-    width: 1200px;
+    
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+
+    @media screen and (min-width: $mobile) {
+        max-width: 480px;
+        outline: 1px solid orange;
+    }
+
+    @media screen and (min-width: $tablet) {
+        max-width: 768px;
+        outline: 1px solid fuchsia;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 1200px;
+        outline: 1px solid aqua;
+    }
 }
+
