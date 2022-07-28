@@ -3,10 +3,12 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
-  
-    background-color: rgba(0, 0, 0, 0.2); 
-  
+    height: 100vh;   
+    z-index: 999;
+    overflow-y: auto;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
     transition: opacity var(--animation-regular),
         visibility var(--animation-regular);
   }
