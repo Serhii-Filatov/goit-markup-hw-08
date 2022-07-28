@@ -267,271 +267,313 @@
     </section>
 
       <!-- * Our team section * -->
-      <section class="section team">
+      <section class="team">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
-          <ul class="team__list list">
-            <li class="team__card">
-              <img
-                src="./images/studio/studio-igor-d.jpg"
-                alt="Фото парня в очках с бородой, в коричневой рубашке."
-              />
-              <div class="team__content">
-                <h3 class="team__title">Игорь Демьяненко</h3>
-                <p class="team__text" lang="en">Product Designer</p>
-                <ul class="social list">
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
+        <h2 class="section-title">Наша команда</h2>
+        <ul class="team__list list table-list ">
+            <li class="team__item item table-item">
+                <picture>
+                    <!-- desctop -->
+                    <source 
+                        media="(min-width: 1200px)"
+                        srcset="images/studio/team/team-1-270.webp 1x, images/studio/team/team-1-270@2x.webp 2x" 
+                        type="image/webp"
+                    />
+                    <source 
+                        media="(min-width: 1200px)"
+                        srcset="images/studio/team/team-1-270.jpg 1x, images/studio/team/team-1-270@2x.jpg 2x" 
+                        type="image/jpg"
+                    />
 
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://twitter.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <!-- tablet -->
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="images/studio/team/team-1-354.webp 1x, images/studio/team/team-1-354@2x.webp 2x"
+                        type="image/webp" 
+                    />
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="images/studio/team/team-1-354.jpg 1x, images/studio/team/team-1-354@2x.jpg 2x"
+                        type="image/jpg" 
+                    />
 
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
+                    <!-- mobile -->
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="images/studio/team/team-1-450.webp 1x, images/studio/team/team-1-450@2x.webp 2x"
+                        type="image/webp" 
+                    />
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="images/studio/team/team-1-450.jpg 1x, images/studio/team/team-1-450@2x.jpg 2x"
+                        type="image/jpg" 
+                    />
+                    <img class="team__image" src="./images/studio/img-1.jpg" alt="мужчина с бородой и очками в рубашке" width="270" height="260">
+                </picture>
 
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                <div class="team-desc">
+                    <h3 class="team-desc__name">Игорь Демьяненко</h3>
+                    <p class="team-desc__position" lang="en">Product Designer</p>
+                    <ul class="sotial list">
+                        <li class="sotial__item">                                
+                            <a class="sotial__link link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferer" aria-label="instagram">
+                            <svg class="sotial__icon" width="20" height="20">
+                                <use href="./images/icons/icons.svg#icon-instagram"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="sotial__item">
+                            <a class="sotial__link link" href="https://twitter.com/" target="_blank" rel="noopener noreferer" aria-label="twitter">
+                            <svg class="sotial__icon" width="20" height="20">
+                                <use href="./images/icons/icons.svg#icon-twitter"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="sotial__item">
+                            <a class="sotial__link link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferer" aria-label="facebook">
+                            <svg class="sotial__icon" width="20" height="20">
+                                <use href="./images/icons/icons.svg#icon-facebook"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="sotial__item">
+                            <a class="sotial__link link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferer" aria-label="linkedin">
+                            <svg class="sotial__icon" width="20" height="20">
+                                <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                            </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>                    
             </li>
+            <li class="team__item item table-item">
+                <picture>
+                    <!-- desctop -->
+                    <source 
+                        media="(min-width: 1200px)" 
+                        srcset="images/team/team-2-270.webp 1x, images/team/team-2-270@2x.webp 2x"
+                        type="image/webp" 
+                    />
+                    <source 
+                        media="(min-width: 1200px)" 
+                        srcset="images/team/team-2-270.jpg 1x, images/team/team-2-270@2x.jpg 2x"
+                        type="image/jpg" 
+                    />
 
-            <li class="team__card">
-              <img
-                src="./images/studio/studio-olga-r.jpg"
-                alt="Фото красивой, светловолосой девушки в очках и деловом костюме."
-              />
-              <div class="team__content">
-                <h3 class="team__title">Ольга Репина</h3>
-                <p class="team__text" lang="en">Frontend Developer</p>
+                    <!-- tablet -->
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="images/team/team-2-354.webp 1x, images/team/team-2-354@2x.webp 2x"
+                        type="image/webp" 
+                    />
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="images/team/team-2-354.jpg 1x, images/team/team-2-354@2x.jpg 2x"
+                        type="image/jpg" 
+                    />
 
-                <ul class="social list">
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://twitter.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                    <!-- mobile -->
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="images/team/team-2-450.webp 1x, images/team/team-2-450@2x.webp 2x"
+                        type="image/webp" 
+                    />
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="images/team/team-2-450.jpg 1x, images/team/team-2-450@2x.jpg 2x"
+                        type="image/jpg" 
+                    />
+                    <img class="team__image" src="./images/img-2.jpg" alt="женщина с белыми волосами и очками" width="270" height="260">
+                </picture>
+                
+                <div class="team-desc">
+                    <h3 class="team-desc__name">Ольга Репина</h3>
+                    <p class="team-desc__position" lang="en">Frontend Developer</p>
+                    <ul class="sotial list">
+                        <li class="sotial__item">
+                            <a class="sotial__link link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferer" aria-label="instagram">
+                                <svg class="sotial__icon" width="20" height="20">
+                                    <use href="./images/icons/icons.svg#icon-instagram"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="sotial__item">
+                                <a class="sotial__link link" href="https://twitter.com/" target="_blank" rel="noopener noreferer" aria-label="twitter">
+                                <svg class="sotial__icon" width="20" height="20">
+                                    <use href="./images/icons/icons.svg#icon-twitter"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="sotial__item">
+                                <a class="sotial__link link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferer" aria-label="facebook">
+                                <svg class="sotial__icon" width="20" height="20">
+                                    <use href="./images/icons/icons.svg#icon-facebook"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="sotial__item">
+                                <a class="sotial__link link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferer" aria-label="linkedin">
+                                <svg class="sotial__icon" width="20" height="20">
+                                    <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                                </svg>
+                                </a>
+                        </li>
+                    </ul>
+                </div>                    
             </li>
+            <li class="team__item item table-item">
+                <picture>
+                    <!-- desctop -->
+                    <source 
+                        media="(min-width: 1200px)" 
+                        srcset="images/team/team-3-270.webp 1x, images/team/team-3-270@2x.webp 2x"
+                        type="image/webp" 
+                    />
+                    <source 
+                        media="(min-width: 1200px)" 
+                        srcset="images/team/team-3-270.jpg 1x, images/team/team-3-270@2x.jpg 2x"
+                        type="image/jpg" 
+                    />
 
-            <li class="team__card">
-              <img
-                src="./images/studio/studio-nicholay-t.jpg"
-                alt="Фото улыбающегося парня с бородкой в рубашке."
-              />
-              <div class="team__content">
-                <h3 class="team__title">Николай Тарасов</h3>
-                <p class="team__text" lang="en">Marketing</p>
+                    <!-- tablet -->
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="images/team/team-3-354.webp 1x, images/team/team-3-354@2x.webp 2x"
+                        type="image/webp" 
+                    />
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="images/team/team-3-354.jpg 1x, images/team/team-3-354@2x.jpg 2x"
+                        type="image/jpg" 
+                    />
 
-                <ul class="social list">
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://twitter.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                    <!-- mobile -->
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="images/team/team-3-450.webp 1x, images/team/team-3-450@2x.webp 2x"
+                        type="image/webp" 
+                    />
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="images/team/team-3-450.jpg 1x, images/team/team-3-450@2x.jpg 2x"
+                        type="image/jpg" 
+                    />
+                    <img class="team__image" src="./images/img-3.jpg" alt="мужчина с бородой" width="270" height="260">
+                </picture>
+                
+                <div class="team-desc">
+                    <h3 class="team-desc__name">Николай Тарасов</h3>
+                    <p class="team-desc__position" lang="en">Marketing</p>
+                    <ul class="sotial list">
+                        <li class="sotial__item">
+                            <a class="sotial__link link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferer" aria-label="instagram">
+                                <svg class="sotial__icon" width="20" height="20">
+                                    <use href="./images/icons/icons.svg#icon-instagram"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="sotial__item">
+                                <a class="sotial__link link" href="https://twitter.com/" target="_blank" rel="noopener noreferer" aria-label="twitter">
+                                <svg class="sotial__icon" width="20" height="20">
+                                    <use href="./images/icons/icons.svg#icon-twitter"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="sotial__item">
+                                <a class="sotial__link link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferer" aria-label="facebook">
+                                <svg class="sotial__icon" width="20" height="20">
+                                    <use href="./images/icons/icons.svg#icon-facebook"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="sotial__item">
+                                <a class="sotial__link link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferer" aria-label="linkedin">
+                                <svg class="sotial__icon" width="20" height="20">
+                                    <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                                </svg>
+                                </a>
+                        </li>
+                    </ul>
+                </div>                    
             </li>
+            <li class="team__item item table-item">
+                <picture>
+                    <!-- desctop -->
+                    <source 
+                        media="(min-width: 1200px)" 
+                        srcset="images/team/team-4-270.webp 1x, images/team/team-4-270@2x.webp 2x"
+                        type="image/webp" 
+                    />
+                    <source 
+                        media="(min-width: 1200px)" 
+                        srcset="images/team/team-4-270.jpg 1x, images/team/team-4-270@2x.jpg 2x"
+                        type="image/jpg" 
+                    />
 
-            <li class="team__card">
-              <img
-                src="./images/studio/studio-miсhael-e.jpg"
-                alt="Фото парня в очках с бородой, в ченой футболке."
-              />
-              <div class="team__content">
-                <h3 class="team__title">Михаил Ермаков</h3>
-                <p class="team__text" lang="en">UI Designer</p>
+                    <!-- tablet -->
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="images/team/team-4-354.webp 1x, images/team/team-4-354@2x.webp 2x"
+                        type="image/webp" 
+                    />
+                    <source 
+                        media="(min-width: 768px)" 
+                        srcset="images/team/team-4-354.jpg 1x, images/team/team-4-354@2x.jpg 2x"
+                        type="image/jpg" 
+                    />
 
-                <ul class="social list">
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://www.instagram.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://twitter.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://www.facebook.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-
-                  <li class="social__item">
-                    <a
-                      class="icon social__icon link"
-                      href="https://www.linkedin.com/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <svg width="20" height="20">
-                        <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
+                    <!-- mobile -->
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="images/team/team-4-450.webp 1x, images/team/team-4-450@2x.webp 2x"
+                        type="image/webp" 
+                    />
+                    <source 
+                        media="(max-width: 767px)" 
+                        srcset="images/team/team-4-450.jpg 1x, images/team/team-4-450@2x.jpg 2x"
+                        type="image/jpg" 
+                    />
+                    <img class="team__image" src="./images/img-4.jpg" alt="мужчина с бородой и очками в футболке" width="270" height="260">
+                </picture>
+                
+                <div class="team-desc">
+                    <h3 class="team-desc__name">Михаил Ермаков</h3>
+                    <p class="team-desc__position" lang="en">UI Designer</p>
+                    <ul class="sotial list">
+                        <li class="sotial__item">
+                            <a class="sotial__link link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferer" aria-label="instagram">
+                                <svg class="sotial__icon" width="20" height="20">
+                                    <use href="./images/icons/icons.svg#icon-instagram"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="sotial__item">
+                                <a class="sotial__link link" href="https://twitter.com/" target="_blank" rel="noopener noreferer" aria-label="twitter">
+                                <svg class="sotial__icon" width="20" height="20">
+                                    <use href="./images/icons/icons.svg#icon-twitter"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="sotial__item">
+                                <a class="sotial__link link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferer" aria-label="facebook">
+                                <svg class="sotial__icon" width="20" height="20">
+                                    <use href="./images/icons/icons.svg#icon-facebook"></use>
+                                </svg>
+                                </a>
+                            </li>
+                            <li class="sotial__item">
+                                <a class="sotial__link link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferer" aria-label="linkedin">
+                                <svg class="sotial__icon" width="20" height="20">
+                                    <use href="./images/icons/icons.svg#icon-linkedin"></use>
+                                </svg>
+                                </a>
+                        </li>
+                    </ul>
+                </div>                    
             </li>
-          </ul>
-        </div>
-      </section>
+        </ul>
+        </div>         
+    </section>
 
       <!-- * Our clients section * -->
       <section class="section">
