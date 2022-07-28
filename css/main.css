@@ -449,8 +449,16 @@ p {
   }
 }
 
-.footer-social {
-  margin-left: 70px;
+@media screen and (min-width: 1200px) {
+  .footer-social {
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer-social {
+    width: 100%;
+    margin-bottom: 60px;
+  }
 }
 .footer-social__title {
   color: var(--color-main);
@@ -459,11 +467,12 @@ p {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 20px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer-social__title {
-    text-align: center;
+    text-align: left;
   }
 }
 .footer-social__list {
@@ -602,10 +611,18 @@ p {
 }
 
 .hero {
+  margin-top: 60px;
+  margin-right: auto;
+  margin-left: auto;
+  height: 400px;
+  padding: 118px 0;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-color: var(--hero-footer-bcg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-480.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-480.jpg);
 }
 .hero__title {
   margin-bottom: 30px;
@@ -831,18 +848,6 @@ p {
   fill: var(--brand-color);
 }
 
-.overlay {
-  height: 600px;
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio/hero.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .portfolio-overlay {
   position: absolute;
   top: 0;
@@ -1028,6 +1033,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 60px;
 }
 .social__item:not(:last-child) {
   margin-right: 10px;
@@ -1054,8 +1060,11 @@ p {
   background-color: var(--brand-color);
 }
 
-.subscribe {
-  margin-left: auto;
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    width: 100%;
+    text-align: center;
+  }
 }
 .subscribe__title {
   display: block;
@@ -1068,7 +1077,6 @@ p {
   color: var(--color-main);
 }
 .subscribe__input {
-  width: 358px;
   max-height: 50px;
   margin-right: 12px;
   padding: 15px 16px;
@@ -1080,6 +1088,30 @@ p {
   border-radius: 4px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (max-width: 480px) {
+  .subscribe__input {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .subscribe__input {
+    width: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+  }
 }
 .subscribe__input::-webkit-input-placeholder {
   font-size: 16px;
@@ -1216,12 +1248,23 @@ p {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .footer__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__container {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }

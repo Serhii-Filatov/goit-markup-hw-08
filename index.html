@@ -17,71 +17,105 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  
+
   <body>
     <!-- * Header section * -->
-    <!-- <header class="header">
-      <div class="container header__container">
-        
-        <nav class="nav">
+    <header class="main-nav">
+      <div class="container">
+          <!-- logo -->
+          <a class="logo link" href="./index.html">Web<span
+                  class="logo-light-theme">Studio</span></a>
+          <!-- Mobile menu -->
+          <button class="mobile-menu-btn" type="button" aria-label="мобильное меню" data-menu-button>
+              <svg class="mobile-menu-icon" width="40" height="40">
+                  <use class="mobile-menu-burger" href="./images/icons/icons.svg#icon-menu-burger"></use>
+                  <use class="mobile-menu-close" href="./images/icons/icons.svg#icon-menu-close"></use>
+              </svg>
+          </button>
+          <div class="mobile-menu" data-menu>
+              <ul class="mobile-menu-nav list">
+                  <li class="mobile-menu-nav-item">
+                      <a class="mobile-menu-nav-link link mobile-menu-nav-link--active" href="./index.html">Студия</a>
+                  </li>
+                  <li class="mobile-menu-nav-item">
+                      <a class="mobile-menu-nav-link link" href="./portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="mobile-menu-nav-item">
+                      <a class="mobile-menu-nav-link link" href="">Контакты</a>
+                  </li>
+              </ul>
           
+              <ul class="mobile-menu-contacts list">
+                  <li class="mobile-menu-contacts-item">
+                      <a class="mobile-menu-contacts-link link mobile-menu-contacts-link--active" href="tel:+380961111111">+38 096 111 11 11</a>
+                  </li>
+                  <li class="mobile-menu-contacts-item">
+                      <a class="mobile-menu-contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                  </li>
+              </ul>
           
-          <div class="logo header__logo">
-            <a class="link" href="./index.html"><span class="logo-dark-theme">Web</span>Studio</a>
+              <ul class="mobile-menu-sotials list">
+                  <li class="mobile-menu-sotials-item">
+                      <a class="mobile-menu-sotials-link link" href="" target="_blank" rel="noopener noreferer">Instagram</a>
+                  </li>
+                  <li class="mobile-menu-sotials-item">
+                      <a class="mobile-menu-sotials-link link" href="" target="_blank" rel="noopener noreferer">Twitter</a>
+                  </li>
+                  <li class="mobile-menu-sotials-item">
+                      <a class="mobile-menu-sotials-link link" href="" target="_blank" rel="noopener noreferer">Facebook</a>
+                  </li>
+                  <li class="mobile-menu-sotials-item">
+                      <a class="mobile-menu-sotials-link link" href="" target="_blank" rel="noopener noreferer">LinkedIn</a>
+                  </li>
+              </ul>
+          </div>
+
+          <nav class="menu">
+              <ul class="menu__list list">
+                  <li class="menu__item item">
+                      <a class="menu__link link menu__link--active" href="">Студия</a>
+                  </li>
+                  <li class="menu__item item">
+                      <a class="menu__link link" href="./portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="menu__item item">
+                      <a class="menu__link link" href="">Контакты</a>
+                  </li>
+              </ul>
+          </nav>
+          <div class="contacts">
+              <ul class="contacts__list list">
+                  <li class="contacts__item item">
+                      <a class="contacts__link link" href="mailto:info@devstudio.com">
+                          <svg class="contacts__icon" width="16" height="12">
+                              <use href="./images/icons/icons.svg#icon-mail"></use>
+                          </svg>
+                          info@devstudio.com
+                      </a>
+                  </li>
+                  <li class="contacts__item item">
+                      <a class="contacts__link link" href="tel:+380961111111">
+                          <svg class="contacts__icon" width="10" height="16">
+                              <use href="./images/icons/icons.svg#icon-smartphone"></use>
+                          </svg>
+                          +38 096 111 11 11
+                      </a>
+                  </li>
+              </ul>
           </div>
           
-          
-          <ul class="nav__list list">
-
-            <li class="nav__item">
-              <a class="nav__link nav__link--current active-page header__link link" href="./index.html">Студия</a>
-            </li>
-
-            <li class="nav__item">
-              <a class="nav__link header__link link" href="./portfolio.html">Портфолио</a>
-            </li>
-
-            <li class="nav__item"><a class="nav__link header__link link" href="#">Контакты</a></li>
-
-          </ul>
-        </nav>
-
-        
-        <ul class="contacts header__nav list">
-
-          <li class="contacts__item">
-            <a class="contacts__link link" href="mailto:info@devstudio.com">
-              <span class="icon">
-                <svg class="icon__start" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#icon-envelope"></use></svg>info@devstudio.com</span>
-            </a>
-          </li>
-
-          <li class="contacts__item">
-            <a class="contacts__link link" href="tel:+380961111111">
-              <span class="icon"
-                ><svg class="icon__start" width="10" height="16">
-                  <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</span>
-            </a>
-          </li>
-        
-        </ul>
-        
-    </header> -->
+      </div>  
+  </header> 
 
     <!-- * Main section * -->
     <main>
       <!-- * Hero section * -->
-       <!-- <section class="hero overlay">
-        <div class="container">
-          <h1 class="title hero__title">
-            Эффективные решения <br />
-            для вашего бизнеса
-          </h1>
-          
-          <button class="button hero__button" type="button" data-modal-open>Заказать услугу</button>
+      <section class="hero"> 
+        <!-- <div class="container"> -->
+          <h1 class="hero__title">Эффективные решения <br> для вашего бизнеса</h1>
+          <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
-      </section> -->
+      </section> 
 
       <!-- * Fetchers section * -->
       <section class="section section--truncation">
@@ -89,7 +123,6 @@
           <h2 class="visually-hidden">Особенности</h2>
 
           <ul class="fetchers list">
-
             <li class="list">
               <div class="icon fetchers__icons">
                 <svg width="70" height="70">
@@ -140,58 +173,55 @@
           </ul>
         </div>
       </section>
-      
+
       <!-- * What are we doing section * -->
       <section class="section hidden">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          
-            <ul class="skills list">
-              <li class="skills__item">
-                <img
-                  src="./images/studio/studio-box-1.jpg"
-                  alt="Человек вводит код программы в компьютер, рядом с ним лежит блок схема."
-                  width="370"
-                  height="294"
-                />
-                <p class="skills__text">Десктопные приложения</p>
-              </li>
-  
-              <li class="skills__item">
-                <img
-                  src="./images/studio/studio-box-2.jpg"
-                  alt="Человек держит телефон, подбирая на ноутбуке вариант обображения макета на мобильном устройстве."
-                  width="370"
-                  height="294"
-                />
-                <p class="skills__text">Мобильные приложения</p>
-              </li>
-  
-              <li class="skills__item">
-                <img
-                  src="./images/studio/studio-box-3.jpg"
-                  alt="Человек выбирает цвет из палитры цветов в планшете на фоне рабочего места."
-                  width="370"
-                  height="294"
-                />
-                <p class="skills__text">Дизайнерские решения</p>
-              </li>
-            </ul>
-          
+
+          <ul class="skills list">
+            <li class="skills__item">
+              <img
+                src="./images/studio/studio-box-1.jpg"
+                alt="Человек вводит код программы в компьютер, рядом с ним лежит блок схема."
+                width="370"
+                height="294"
+              />
+              <p class="skills__text">Десктопные приложения</p>
+            </li>
+
+            <li class="skills__item">
+              <img
+                src="./images/studio/studio-box-2.jpg"
+                alt="Человек держит телефон, подбирая на ноутбуке вариант обображения макета на мобильном устройстве."
+                width="370"
+                height="294"
+              />
+              <p class="skills__text">Мобильные приложения</p>
+            </li>
+
+            <li class="skills__item">
+              <img
+                src="./images/studio/studio-box-3.jpg"
+                alt="Человек выбирает цвет из палитры цветов в планшете на фоне рабочего места."
+                width="370"
+                height="294"
+              />
+              <p class="skills__text">Дизайнерские решения</p>
+            </li>
+          </ul>
         </div>
-      </section> 
+      </section>
 
       <!-- * Our team section * -->
-       <section class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list list">
-            
             <li class="team__card">
               <img
                 src="./images/studio/studio-igor-d.jpg"
                 alt="Фото парня в очках с бородой, в коричневой рубашке."
-                
               />
               <div class="team__content">
                 <h3 class="team__title">Игорь Демьяненко</h3>
@@ -256,7 +286,6 @@
               <img
                 src="./images/studio/studio-olga-r.jpg"
                 alt="Фото красивой, светловолосой девушки в очках и деловом костюме."
-                
               />
               <div class="team__content">
                 <h3 class="team__title">Ольга Репина</h3>
@@ -322,7 +351,6 @@
               <img
                 src="./images/studio/studio-nicholay-t.jpg"
                 alt="Фото улыбающегося парня с бородкой в рубашке."
-                
               />
               <div class="team__content">
                 <h3 class="team__title">Николай Тарасов</h3>
@@ -388,7 +416,6 @@
               <img
                 src="./images/studio/studio-miсhael-e.jpg"
                 alt="Фото парня в очках с бородой, в ченой футболке."
-                
               />
               <div class="team__content">
                 <h3 class="team__title">Михаил Ермаков</h3>
@@ -510,9 +537,9 @@
         </div>
       </section>
     </main>
-    
+
     <!-- * Footer section * -->
-     <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container">
         
         <div class="footer__container">
@@ -620,10 +647,10 @@
           </div>
         </div>
       </div>
-    </footer> 
+    </footer>  
 
     <!-- * Modal window section * -->
-    <div class="backdrop is-hidden" data-modal> 
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="11" height="11">
@@ -641,7 +668,12 @@
                   <svg class="modal-form-icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-user"></use>
                   </svg>
-                  <input class="modal-form-input modal-height" type="text" name="user-name" required />
+                  <input
+                    class="modal-form-input modal-height"
+                    type="text"
+                    name="user-name"
+                    required
+                  />
                 </label>
               </li>
 
@@ -651,7 +683,12 @@
                   <svg class="modal-form-icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
-                  <input class="modal-form-input modal-height" type="tel" name="user-phone" required />
+                  <input
+                    class="modal-form-input modal-height"
+                    type="tel"
+                    name="user-phone"
+                    required
+                  />
                 </label>
               </li>
 
@@ -661,14 +698,19 @@
                   <svg class="modal-form-icon" width="18" height="18">
                     <use href="./images/icons.svg#icon-letter"></use>
                   </svg>
-                  <input class="modal-form-input modal-height" type="email" name="user-mail" required />
+                  <input
+                    class="modal-form-input modal-height"
+                    type="email"
+                    name="user-mail"
+                    required
+                  />
                 </label>
               </li>
 
               <li class="modal-input-pos">
                 <label class="modal-form-label">
                   <span class="modal-label-name">Комментарий</span>
-                    <textarea
+                  <textarea
                     class="modal-txt-area form-comment"
                     name="user-comment"
                     placeholder="Введите текст"
@@ -702,9 +744,9 @@
           </form>
         </div>
       </div>
-    </div> 
-    
+    </div> -->
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
-  
 </html>

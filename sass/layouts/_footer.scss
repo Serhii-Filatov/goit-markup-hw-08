@@ -9,13 +9,14 @@
     display: flex;
     flex-wrap: wrap;
     
-    align-items: baseline;
-    
-    @media screen and (max-width: 1199px){
-      
+    @media screen and (max-width: 767px){
+      flex-direction: column;
+      justify-content: center;
+    }
+    @media screen and (min-width: $tablet){
+      align-items: baseline;
       justify-content: space-around;
     }
-    
   
 }
 
