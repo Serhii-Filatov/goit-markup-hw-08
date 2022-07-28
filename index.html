@@ -164,100 +164,107 @@
       </section>
 
       <!-- * Fetchers section * -->
-      <section class="section section--truncation">
+      <section class="advantage">
         <div class="container">
-          <h2 class="visually-hidden">Особенности</h2>
-
-          <ul class="fetchers list">
-            <li class="list">
-              <div class="icon fetchers__icons">
-                <svg width="70" height="70">
-                  <use href="./images/symbol-defs.svg#icon-antenna"></use>
-                </svg>
-              </div>
-              <h3 class="fetchers__title">Внимание к деталям</h3>
-              <p class="fetchers__text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
-              </p>
-            </li>
-
-            <li class="list">
-              <div class="icon fetchers__icons">
-                <svg width="70" height="70">
-                  <use href="./images/symbol-defs.svg#icon-clock"></use>
-                </svg>
-              </div>
-              <h3 class="fetchers__title">Пунктуальность</h3>
-              <p class="fetchers__text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-              </p>
-            </li>
-
-            <li class="list">
-              <div class="icon fetchers__icons">
-                <svg width="70" height="70">
-                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
-                </svg>
-              </div>
-              <h3 class="fetchers__title">Планирование</h3>
-              <p class="fetchers__text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
-              </p>
-            </li>
-
-            <li class="list">
-              <div class="icon fetchers__icons">
-                <svg width="70" height="70">
-                  <use href="./images/symbol-defs.svg#icon-astronaut"></use>
-                </svg>
-              </div>
-              <h3 class="fetchers__title">Современные технологии</h3>
-              <p class="fetchers__text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-              </p>
-            </li>
-          </ul>
+            <h2 hidden>Преимущества</h2>
+            <ul class="advantage__list list table-list">
+                <li class="advantage__item item table-item">
+                    <div class="advantage-pic">
+                        <svg width="70" height="70">
+                            <use href="./images/icons/icons.svg#icon-antenna"></use>
+                        </svg>
+                    </div>
+                    <h3 class="advantage__title">Внимание к деталям</h3>
+                    <p class="advantage__desc">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+                </li>
+                <li class="advantage__item item table-item">
+                    <div class="advantage-pic">
+                        <svg width="70" height="70">
+                            <use href="./images/icons/icons.svg#icon-clock"></use>
+                        </svg>
+                    </div>
+                    <h3 class="advantage__title">Пунктуальность</h3>
+                    <p class="advantage__desc">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                    </p>
+                </li>
+                <li class="advantage__item item table-item">
+                    <div class="advantage-pic">
+                        <svg width="70" height="70">
+                            <use href="./images/icons/icons.svg#icon-diagram"></use>
+                        </svg>
+                    </div>
+                    <h3 class="advantage__title">Планирование</h3>
+                    <p class="advantage__desc">Равным образом консультация с широким активом в значительной степени обуславливает.
+                    </p>
+                </li>
+                <li class="advantage__item item table-item">
+                    <div class="advantage-pic">
+                        <svg width="70" height="70">
+                            <use href="./images/icons/icons.svg#icon-astronaut"></use>
+                        </svg>
+                    </div>
+                    <h3 class="advantage__title">Современные технологии</h3>
+                    <p class="advantage__desc">Значимость этих проблем настолько очевидна, что реализация плановых заданий</p>
+                </li>               
+            </ul>
         </div>
-      </section>
+    </section>
 
       <!-- * What are we doing section * -->
-      <section class="section hidden">
+      <section class="works">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
-
-          <ul class="skills list">
-            <li class="skills__item">
-              <img
-                src="./images/studio/studio-box-1.jpg"
-                alt="Человек вводит код программы в компьютер, рядом с ним лежит блок схема."
-                width="370"
-                height="294"
-              />
-              <p class="skills__text">Десктопные приложения</p>
-            </li>
-
-            <li class="skills__item">
-              <img
-                src="./images/studio/studio-box-2.jpg"
-                alt="Человек держит телефон, подбирая на ноутбуке вариант обображения макета на мобильном устройстве."
-                width="370"
-                height="294"
-              />
-              <p class="skills__text">Мобильные приложения</p>
-            </li>
-
-            <li class="skills__item">
-              <img
-                src="./images/studio/studio-box-3.jpg"
-                alt="Человек выбирает цвет из палитры цветов в планшете на фоне рабочего места."
-                width="370"
-                height="294"
-              />
-              <p class="skills__text">Дизайнерские решения</p>
-            </li>
-          </ul>
+            <h2 class="section-title">Чем мы занимаемся</h2>
+            <ul class="works__list list table-list">
+                <li class="works__item item table-item">
+                    <picture>
+                        <source 
+                            media="(min-width: 1200px)" 
+                            srcset="images/studio/work/work-1-370.webp 1x, images/work/work-1-370@2x.webp 2x"
+                            type="image/webp" 
+                        />
+                        <source
+                            media="(min-width: 1200px)"                                 
+                            srcset="images/studio/work/work-1-370.jpg 1x, images/work/work-1-370@2x.jpg 2x" 
+                            type="image/jpg"
+                        />                            
+                        <img class="works__image" src="./images/box-1.jpg" alt="разработка алгоритмов" width="370" height="294">
+                    </picture>                        
+                    <p class="works__desc">Десктопные приложения</p>
+                </li>
+                <li class="works__item item table-item">
+                    <picture>
+                        <source 
+                            media="(min-width: 1200px)" 
+                            srcset="images/studio/work/work-2-370.webp 1x, images/work/work-2-370@2x.webp 2x"
+                            type="image/webp" 
+                        />
+                        <source 
+                            media="(min-width: 1200px)"
+                            srcset="images/studio/work/work-2-370.jpg 1x, images/work/work-2-370@2x.jpg 2x" 
+                            type="image/jpg" />
+                        <img class="works__image" src="./images/box-2.jpg" alt="разработка приложений" width="370" height="294">
+                    </picture>      
+                    <p class="works__desc">Мобильные приложения</p>
+                </li>
+                <li class="works__item item table-item">
+                    <picture>
+                        <source 
+                            media="(min-width: 1200px)" 
+                            srcset="images/studio/work/work-3-370.webp 1x, images/work/work-3-370@2x.webp 2x"
+                            type="image/webp" 
+                        />
+                        <source 
+                            media="(min-width: 1200px)"                                
+                            srcset="images/studio/work/work-3-370.jpg 1x, images/work/work-3-370@2x.jpg 2x"
+                            type="image/jpg" 
+                            />
+                        <img class="works__image" src="./images/box-3.jpg" alt="выбор цветов" width="370" height="294">
+                    </picture>                        
+                    <p class="works__desc">Дизайнерские решения</p>
+                </li>
+            </ul>
         </div>
-      </section>
+    </section>
 
       <!-- * Our team section * -->
       <section class="section team">
