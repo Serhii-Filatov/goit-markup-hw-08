@@ -1,4 +1,5 @@
 :root {
+  --font-main: "Roboto", sans-serif;
   --main-color: #212121;
   --brand-color: #2196F3;
   --second-color: #757575;
@@ -25,9 +26,8 @@
 
 body {
   font-family: var(--font-main);
-  font-size: 14px;
-  background-color: var(--color-main);
-  color: var(--color-txt-main);
+  color: var(--main-color);
+  font-size: 16px;
 }
 
 img {
@@ -39,6 +39,7 @@ img {
 h1,
 h2,
 h3,
+ul,
 p {
   margin-top: 0;
   margin-bottom: 0;
@@ -46,18 +47,10 @@ p {
 
 .list {
   list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.list--pos {
-  margin-bottom: 20px;
 }
 
 .link {
   text-decoration: none;
-  font-family: inherit;
-  color: inherit;
 }
 
 .address {
