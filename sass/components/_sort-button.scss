@@ -1,0 +1,42 @@
+.sort-btn {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 8px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;    
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+}
+
+.portfolio-button {
+    padding: 6px 22px;
+    min-width: auto;
+    
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;    
+    color: var(--main-color);
+    background-color: var(--bgd-scl);
+
+    transition: background-color var(--animation-regular),
+        color var(--animation-regular),
+        box-shadow var(--animation-regular);    
+}
+
+.portfolio .button:focus,
+.portfolio .button:hover,
+.portfolio .active-btn {
+    background-color: var(--brand-color);
+    color: var(--third-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+}

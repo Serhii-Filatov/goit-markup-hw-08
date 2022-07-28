@@ -1,16 +1,23 @@
 .logo {
-    color: var(--color-logo);
     font-family: var(--font-basic);
-    font-size: 26px;
     font-weight: 700;
-    line-height: 1.2;
-    
-        &-dark-theme {
-            color: var(--brand-color);
-        }
-        &-light-theme {
-            color: var(--color-main);
-        }
+    font-size: 24px;
+    line-height: 1.17;    
+    letter-spacing: 0.03em;    
+    color: var(--brand-color);    
+
+    &-dark-theme {
+        color: var(--third-color);
+    }
+
+    &-light-theme {
+        color: var(--main-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;    
+        line-height: 1.19;
+    }
 }
   
 

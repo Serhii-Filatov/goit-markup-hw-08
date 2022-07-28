@@ -1,0 +1,45 @@
+.sotial {
+    display: flex;
+    justify-content: center;
+
+    &__item {
+        width: 44px;
+        height: 44px;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.sotial__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;    
+    background-color: var(--third-color);
+
+    transition: background-color var(--animation-regular);
+
+    &:focus,
+    &:hover {
+        background-color: var(--brand-color);
+    }
+
+    &:focus .sotial__icon,
+    &:hover .sotial__icon {
+        fill: var(--third-color);
+    }
+}
+
+.sotial__icon {
+    fill: var(--icon-static-color);
+
+    transition: color var(--animation-regular);
+}
+  
+   
+  
+  
